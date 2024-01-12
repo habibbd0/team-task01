@@ -1,0 +1,76 @@
+/* gogle fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;0,700;0,800;0,900;1,300;1,400;1,500&family=Roboto:wght@100;300;400;500;700&display=swap');
+/* css reset  */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	font-family: 'Roboto', sans-serif;
+}
+/* main part  */
+nav {
+	width: 100%;
+	height: 70px;
+	padding: 30px 100px;
+	display: flex;
+	justify-content: space-between;
+	background: #111;
+	align-items: center;
+}
+.BandName {
+	font-size: 30px;
+	color: #ffff;
+	font-weight: 600;
+}
+.menu ul{
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 3rem;
+}
+.menu ul li a {
+	font-size: 16px;
+	color: #ffff;
+	text-transform: capitalize;
+}
+.mobaile-Menu i {
+	
+	color: #ffff;
+	display: none;
+}
+
+/* Responsive design  */
+
+@media(max-width:768px) {
+	.menu ul {
+         width: 100%;
+		 height: 100%;
+		 left: -100%;
+		 position: absolute;
+		 top: 70px;
+		 background: #111;
+		 display: block;
+		 text-align: center;
+		 transition: 0.5s all ease;
+	}
+	.menu ul li {
+		margin: 40px 0;
+	}
+	.menu ul li:hover a {
+		color: red;
+		transition: 0.4s all ease;
+	}
+	.menu .active{
+		left: 0%;
+	}
+	.mobaile-Menu i{
+		display: inline-block;
+		font-size: 25px;
+		cursor: pointer;
+	}
+	.BandName {
+		margin-right: 40px;
+	}
+}
