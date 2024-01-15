@@ -657,9 +657,9 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
 	}
 }
 @media(max-width:1195px) {
-	.control-panel .control-panel-text {
-		/* margin:0 53px; */
-	}
+	/* .control-panel .control-panel-text {
+		margin:0 53px;
+	} */
 }
 
 
