@@ -1,18 +1,3 @@
-let mobaileMenu = document.querySelector('.mobaile-Menu');
-// console.log(mobaileMenu);
-
-let menubar = document.querySelector('#menu-bar');
-// console.log(menubar);
-
-mobaileMenu.addEventListener('click',function(){
-	menubar.classList.toggle('active');
-	// menubar.style.background = 'red'
-}) 
-
-
-
-// priceing dom design 
-
 const priceingSite = [
 	{ id: 1, productprice: ".com $9.25 "},
 	{ id: 2, productprice: ".sg $7.91" },

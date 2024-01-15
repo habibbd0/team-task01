@@ -271,29 +271,27 @@ section {
     border: none;
 	font-size: 18px;
 }
-.webhosting-group {
+
+#webhosting-group {
+	display: flex;
+    justify-content: space-between;
 	width: 50%;
 	height: auto;
 	margin: auto;
 	margin-bottom: 60px;
 }
-.webhosting-group ul {
-	display: flex;
-    justify-content: space-between;
-
-}
 @media(max-width:768px) {
-	.webhosting-group ul {
+	#webhosting-group {
 		display: grid;
 	   grid-template-columns: repeat(auto-fit,minmax(380px,1fr));
 	   justify-content: space-between;
 	   align-items: center;
 	}
-	.webhosting-group ul li {
+	#webhosting-group li {
 		margin: 10px 0;
 		text-align: center;
 	}
-	.webhosting-starting h1 {
+	#webhosting-starting h1 {
 		font-size: 25px;
 		letter-spacing: 1px;
 		color: rgb(6, 7, 92);
@@ -301,25 +299,25 @@ section {
 	}
 }
 @media(max-width:420px) {
-	.webhosting-group ul {
+	#webhosting-group {
 		display: grid;
 	   grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
 	   justify-content: space-between;
 	   align-items: center;
 	}
-	.webhosting-group ul li {
+	#webhosting-group li {
 		margin: 10px 0;
 		text-align: center;
 	}
 }
 
-.webhosting-group ul li a{
+#webhosting-group li a{
 	color: #2f3b3b;
 	font-size: 14px;
 	font-family: 'text-SemiBold' , sans-serif;
 	
 }
-.webhosting-group ul li button {
+#webhosting-group li button {
 	color: #fff;
 	border: none;
 	outline: none;

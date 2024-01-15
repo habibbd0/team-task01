@@ -1,0 +1,73 @@
+.friendly-control-panel {
+	width: 100%;
+	height: 100vh;
+	margin: auto;
+	background-color: #000000;
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+	}
+	.friendly-control-panel h1 {
+		color: #fff;
+		font-size: 35px;
+		text-align: center;
+		padding-top: 50px;
+	}
+	.control-panel  {
+		display: grid;
+		grid-template-columns: repeat(auto-fit,minmax(380px,1fr));
+		justify-content: space-between;
+		width: 75%;
+		margin: auto;
+		gap: 7rem;
+	}
+	.control-panel .control-panel-image img {
+		padding: 10px 0;
+		width: 550px;
+		height: 450px;
+	}
+	.control-panel .control-panel-text {
+		margin-top: 10px;
+	}
+	.control-panel .control-panel-text .control-group {
+		display: flex;
+		gap: 1.5rem;
+		margin: 20px 0;
+	}
+	.control-panel .control-panel-text .control-group .control-image i {
+		font-size: 70px;
+		color: #004d8b;
+	}
+	.control-panel .control-panel-text .control-group .control-text h3 {
+		color: white;
+		text-transform: capitalize;
+		margin-bottom: 10px;
+	}
+	.control-panel .control-panel-text .control-group .control-text span {
+		color: #afafaf;
+		line-height: 25px;
+	}
+	/* responsive design  */
+	@media(max-width:768px) {
+		.control-panel .control-panel-text {
+			margin-top: -122px;
+		}
+		.control-panel .control-panel-image img {
+			padding: 10px 0;
+			width: 513px;
+			height: 315px;
+		}
+	}
+	@media(max-width:992px) {
+		.control-panel .control-panel-text {
+			margin-top: -102px;
+		}
+	}
+	@media(max-width : 1161px) {
+		.control-panel .control-panel-text {
+			margin-top: -62px;
+		}
+	}
+	@media(max-width:1195px) {
+		/* .control-panel .control-panel-text {
+			margin:0 53px;
+		} */
+	}

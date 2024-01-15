@@ -1,0 +1,79 @@
+.customer-saying {
+	width: 60%;
+	margin: auto;
+	margin-top: 20px;
+}
+.customer-saying h1 {
+	font-size: 35px;
+	text-align: center;
+	color: rgb(6, 7, 92);
+	letter-spacing: 1px;
+}
+.customer-saying span {
+	font-size: 16px;
+	justify-content: center;
+	display: flex;
+	margin-top: 10px;
+	color: #4e4e4e;
+}
+.customer-saying-panel {
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+	align-items: center;
+	justify-content: space-around;
+	gap: 10rem;
+	width: 60%;
+	height: auto;
+	margin: auto;
+	background-color: #fff;
+	padding: 20px;
+	margin-top: 50px;
+	border-radius: 5px;
+	/* margin-bottom: 50px; */
+	box-shadow: rgb(235, 47, 14);
+	position: relative;
+}
+.customer-saying-panel .image2 {
+	position: absolute;
+	right:350px ;
+	top: 50px;
+}
+.customer-saying-panel .image2 i {
+	font-size: 40px;
+	background-color: rgb(238, 48, 0);
+	padding: 10px;
+	color: #fff;
+	margin: auto;
+	border-radius: 50px;
+}
+.customer-saying-panel .customer-text p {
+	font-size: 18px;
+	font-family: 'text-Italic', sans-serif;
+	letter-spacing: 1px;
+	line-height: 25px;
+	/* margin-bottom: 20px; */
+}
+.customer-saying-panel .customer-text .line {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin-top: 20px;
+}
+.customer-saying-panel .customer-text .line img {
+	width: 50px;
+	height: 40px;
+}
+.customer-saying-panel .customer-text .line h3 {
+	color: rgb(6, 7, 92);
+}
+.customer-saying-panel .customer-text h4 {
+	color: #bebbbb;
+	font-size: 16px;
+	margin-left: 50px;
+}
+/* responsive design  */
+@media(max-width:768px) {
+	.customer-saying-panel .customer-text p {
+		margin-top: -139px;
+	}
+}
